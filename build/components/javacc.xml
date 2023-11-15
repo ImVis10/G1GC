@@ -35,9 +35,9 @@
     <property name="javacc.web-archive" value="javacc-${javacc.version}.jar"/>
     <property name="javacc.target.jar" value="javacc.jar"/>
     <mkdir dir="${javacc.package.dir}"/>
-    <cachedGet key="${javacc.web-archive}"
+    <!--<cachedGet key="${javacc.web-archive}"
          src="https://repo1.maven.org/maven2/net/java/dev/javacc/javacc/${javacc.version}/javacc-${javacc.version}.jar"
-         dest="${javacc.package.dir}/${javacc.target.jar}"/>
+         dest="${javacc.package.dir}/${javacc.target.jar}"/>-->
     <writeComponentConstants dir="${javacc.dir}"/>
   </target>
 

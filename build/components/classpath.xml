@@ -189,6 +189,9 @@
       - classpath archives ship makefiles but the classpath-web.RVM-773-08.patch
           changes Makefile.am so we have to regenerate them
     -->
+    
+    <echo>classpath.dir = ${classpath.dir}</echo>
+
     <exec executable="${classpath.dir}/autogen.sh" failonerror="true" dir="${classpath.dir}"/>
 
     <test-file name="make.exe" location="${host.file}"/>

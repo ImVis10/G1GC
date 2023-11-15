@@ -157,6 +157,8 @@ public class Harness {
   }
 
   public static void init(List<String> args) {
+	  for (String arg : args)
+		  System.out.println(arg);
     init(args.toArray(new String[0]));
   }
 
